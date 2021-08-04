@@ -1,0 +1,4 @@
+def card_hide(num):
+  return '#' * len(num[:-4]) + num[-4:]
+  pass
+print(card_hide("123456987"))
