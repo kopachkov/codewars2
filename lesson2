@@ -1,0 +1,11 @@
+num=0
+
+def square_digits(num):
+  xer = list(str(num))
+  xer = [ int(elem) for elem in xer]
+  xer = [ * (x**2 for x in xer)]
+  xer = (''.join(map(str, xer)))
+  xer = int(xer)
+  print (xer)
+
+square_digits(num)
