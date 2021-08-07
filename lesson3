@@ -1,0 +1,15 @@
+def duplicate_encode(word):
+    c=''
+    word = word.lower()
+    for i in word:
+        i = str(word.count(i))
+        c += i
+    e=''
+    for i in c:
+        if i == '1':
+            i = '('
+            e += i
+        else:
+            i = ')'
+            e += i
+    return e
