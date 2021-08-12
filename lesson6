@@ -1,0 +1,13 @@
+def duplicate_count(text):
+  text = text.lower()
+  list1 = list(text)
+  list2 = ([list1[:i].count(list1[i]) for i in range(len(list1))])
+  g=0
+  for t in list2:
+    if t == 1:
+      g += 1
+  return g
+  
+  
+  def duplicate_count(s):
+  return len([c for c in set(s.lower()) if s.lower().count(c)>1])
