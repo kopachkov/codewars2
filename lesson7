@@ -1,0 +1,36 @@
+def dirReduc(arr):
+    arr2 = []
+    for x in arr:
+        if x == "NORTH":
+            arr2.append("N")
+        elif x == "SOUTH":
+            arr2.append("S")
+        elif x == "WEST":
+            arr2.append("W")
+        else:
+            arr2.append("E")
+    b = "".join(b for b in arr2)
+    b = b.replace("NS","")
+    b = b.replace("SN","")
+    b = b.replace("EW","")
+    b = b.replace("WE","")
+    b = b.replace("NS","")
+    b = b.replace("SN","")
+    b = b.replace("EW","")
+    b = b.replace("WE","")
+    b = b.replace("NS","")
+    b = b.replace("SN","")
+    b = b.replace("EW","")
+    b = b.replace("WE","")
+    b = list(b)  
+    arr3 = []
+    for x in b:
+        if x == "N":
+            arr3.append("NORTH")
+        elif x == "S":
+            arr3.append("SOUTH")
+        elif x == "W":
+            arr3.append("WEST")
+        else:
+            arr3.append("EAST")
+    return arr3
